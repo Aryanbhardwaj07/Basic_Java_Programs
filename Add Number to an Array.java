@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 class addNumber {
 
-static void AddNum(Vector<Integer> digits)
+static void AddNum(List<Integer> digits)
 {
     int index= digits.size() - 1;
 	
@@ -15,9 +15,10 @@ static void AddNum(Vector<Integer> digits)
 	    digits.set(0, 1);
 	    digits.add(digits.size(),0);
 	}
-	else
+	else{
 	digits.set(index, digits.get(index) + 1);
     }
+}
 public static void main(String[] args)
 {
 	Vector<Integer> digits = new Vector<Integer>(Arrays.asList(9,9,9));
