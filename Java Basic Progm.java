@@ -1,7 +1,7 @@
-Java Basic Progm
+class Solution{
 
-    //public static void main(String[] args)
-    /*{ *********** QUESTION 1***************
+    public static void main(String[] args)
+    {
         Scanner obj= new Scanner(System.in);
         System.out.println("Enter the size of array:");
         int n=obj.nextInt();
