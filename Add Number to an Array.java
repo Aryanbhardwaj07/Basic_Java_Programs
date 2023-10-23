@@ -9,14 +9,14 @@ static void AddNum(List<Integer> digits)
 	
 	while (index >= 0 && digits.get(index) == 9){
 	digits.set(index, 0);
-	index -= 1;
+	index --;
 	}
 	if (index < 0){
 	    digits.set(0, 1);
 	    digits.add(digits.size(),0);
 	}
 	else{
-	digits.set(index, digits.get(index) + 1);
+	digits.set(index, digits.get(index)++);
     }
 }
 public static void main(String[] args)
